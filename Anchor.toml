@@ -1,0 +1,11 @@
+[features]
+seeds = []
+[programs.localnet]
+oraclematrix = "YOUR_PROGRAM_ID_HERE"
+[registry]
+url = "https://api.apr.dev"
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
